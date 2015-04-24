@@ -1,0 +1,4 @@
+<a href="<?php echo Router::url('/'); ?>users/register"> Register </a> 
+<a href="<?php echo Router::url('/'); ?>users/logout"> Logout</a> 
+<a href="<?php echo Router::url('/'); ?>users/login"> Login </a> 
+<?php if(isset($_SESSION['Auth']['User'])) { ?> <a style="float:right" href="<?php echo Router::url('/'); ?>users/edit"> Hello <?php echo $_SESSION['Auth']['User']['username'] ?> </a> <?php } ?>
